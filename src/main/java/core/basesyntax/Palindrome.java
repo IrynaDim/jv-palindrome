@@ -22,7 +22,7 @@ public class Palindrome {
      */
     public boolean isPalindrome(String text) {
         text = text.toLowerCase();
-        text = text.replaceAll(" ", "").replaceAll("[,'!.)-]", "");
+        text = text.replaceAll("[, '!.)-]", "");
         StringBuilder textSb = new StringBuilder(text);
         return text.equals(textSb.reverse().toString());
     }
